@@ -1,0 +1,99 @@
+.socials {
+    padding: 0px 100px 160px 100px;
+}
+
+.photoandicons {
+    background-image: url('../images/socialMedia-img.jpg');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.socialMediaLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 180px 20px;
+}
+
+.social-icon {
+    width: 56px;
+    height: 56px;
+}
+
+.tg, .inst, .ttok {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.social-icon-hover {
+    display: none;
+}
+
+a:hover .social-icon-hover {
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+}
+
+a:hover .social-icon {
+    display: none;
+}
+
+.signature{
+    color: #EDEDED;
+    font-size: 36px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .socials {
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .socials {
+        padding: 60px 10px;
+    }
+
+    .signature{
+        font-size: 24px;
+    }
+
+    .socialMediaLink {
+        padding: 60px 0;
+    }
+
+    .social-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    a:hover .social-icon-hover {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+@media screen and (max-width: 548px) {
+    .socials {
+        padding: 60px 0;
+    }
+
+    .socials-title {
+        padding: 0 20px;
+    }
+
+    .signature{
+        padding: 0;
+    }
+}
+
+
+

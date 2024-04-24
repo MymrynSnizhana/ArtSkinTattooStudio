@@ -1,0 +1,264 @@
+.form {
+    border: 10px solid #428BDD;
+    margin: 0 100px 160px;
+    padding: 60px 190px 60px 145px;
+}
+
+.text_form {
+    margin-bottom: 54px;
+    text-transform: uppercase;
+}
+
+.form-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 75.21px;
+    color: #EDEDED;
+}
+
+.form-sbt {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24.17px;
+    color: #EDEDED;
+    text-transform: uppercase;
+}
+
+.additional-txt{
+    color: #428BDD;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+}
+
+.form_content_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.info_in_formField_column1 {
+    height: 45px;
+    max-width: 100%;
+    width: 100%;
+    color: #EDEDED;
+    background-color: #1E1E1E;
+    border-right: 1px #EDEDED;
+    font-size: 16px;
+}
+
+.info_in_formField_column1:last-child{
+    height: 45px;
+    max-width: 100%;
+    width: 100%;
+    color: #EDEDED;
+    background-color: #1E1E1E;
+    border-right: 1px #EDEDED;
+    font-size: 16px;
+}
+
+.sketch {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.or_form {
+    color: #428BDD;
+    margin-bottom: 40px;
+}
+
+.custom-btn {
+    padding: 12px 24px;
+    background-color: #1E1E1E;
+    border: 1px #EDEDED solid;
+    color: #EDEDED;
+    transition: 0.3s ease-in-out ;
+    width: 256px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.custom-btn:hover{
+    background-color: #428BDD;
+    border: 1px #428BDD solid;
+}
+
+.btn-session{
+    padding: 12px 24px;
+    background-color: #428BDD;
+    color: #EDEDED;
+    transition: 0.3s ease-in-out ;
+    width: 256px;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.btn-session:hover{
+    background-color: #194474;
+}
+
+.right_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.checkboxes label.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    color: #EDEDED;
+    font-weight: 400;
+}
+
+.checkboxes input[type="checkbox"] {
+    width: 26px;
+    height: 26px;
+    opacity: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkboxes input[type="checkbox"] + label.checkbox {
+    position: relative;
+}
+
+.checkboxes input[type="checkbox"] + label.checkbox:before {
+    content: '';
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #EDEDED;
+    border-radius: 3px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.checkboxes input[type="checkbox"]:checked + label.checkbox:after {
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: 6px;
+    left: 13px;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background-color: #EDEDED;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+#datePicker {
+    display: none;
+    background-color: #1E1E1E;
+    color: #EDEDED;
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    border: 1px solid #EDEDED;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#datePicker::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+@media screen and (max-width: 1024px) {
+    .form  {
+        padding: 50px;
+        margin: 50px;
+    }
+
+    .form-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+    .form {
+        padding: 20px;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 548px) {
+
+    .form-title {
+        font-size: 24px;
+        line-height: 36.21px;
+    }
+
+}
+
+
+.notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #EDEDED;
+    color: #1E1E1E;
+    padding: 40px;
+    z-index: 1000;
+    width: 100%;
+    max-width: 640px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.notification.show {
+    animation: fadeInOut 0.6s ease-in-out;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* чорний колір з непрозорістю 40% */
+    z-index: 999;
+}
+
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -70%);
+    }
+    10% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    90% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -70%);
+    }
+}

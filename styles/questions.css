@@ -1,0 +1,274 @@
+.questions {
+    padding: 0 100px 160px 100px;
+}
+
+.faq_questions {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+
+
+.accordion-item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.accordion-title {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.arrow {
+    width: 24px;
+}
+
+.acard_blueText {
+    padding: 10px;
+}
+
+.advice {
+    margin: 0 20px;
+}
+
+.advice-last {
+    padding-top: 20px;
+}
+
+.dropdown {
+    margin-bottom: 60px;
+        width: 100%;
+        max-width: 1040px;
+}
+
+.accordion-title::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #EDEDED;
+}
+
+.arrow {
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    right: 0;
+}
+
+.accordion-content {
+    display: none;
+    height: auto;
+    margin-bottom: 60px;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked ~ .accordion-title .arrow {
+    transform: rotate(180deg);
+}
+
+input[type="checkbox"]:checked ~ .accordion-content {
+    display: block;
+}
+
+.acard_blueText{
+    color: #428BDD;
+}
+
+.consultation_form {
+    text-align: center;
+    margin-top: 160px;
+    border: 10px solid #428BDD;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.consult_title {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 64.46px;
+    margin-top: 60px;
+}
+
+.name_input {
+    margin: 40px auto;
+    height: 45px;
+    width: 70%;
+    color: #EDEDED;
+    background-color: #1E1E1E;
+    border-right: 1px #EDEDED;
+    font-size: 16px;
+    display: block;
+}
+
+.phone_input{
+    margin-bottom: 40px;
+    height: 45px;
+    width: 70%;
+    color: #EDEDED;
+    background-color: #1E1E1E;
+    border-right: 1px #EDEDED;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.checkbox_form input[type="checkbox"] {
+    width: 26px;
+    height: 26px;
+    opacity: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox_form input[type="checkbox"] + label.checkbox {
+    display: flex;
+    align-items: left;
+    font-size: 16px;
+    color: #EDEDED;
+    font-weight: 400;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.checkbox_form input[type="checkbox"] + label.checkbox:before {
+    content: '';
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #EDEDED;
+    border-radius: 3px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.checkbox_form input[type="checkbox"]:checked + label.checkbox:after {
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    left: 11px;
+    width: 6px;
+    height: 6px;
+    background-color: #EDEDED;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn-small {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24.17px;
+    display: flex;
+    margin: auto;
+    padding: 12px 24px;
+    border: none;
+    background-color: #428BDD;
+    color: #EDEDED;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out ;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.btn-small:hover {
+    background-color: #194474;
+}
+
+@keyframes increaseSize {
+    from {
+      font-size: 24px;
+    }
+    to {
+      font-size: 36px;
+    }
+  }
+
+  input[type="checkbox"]:checked ~ .accordion-title h3 {
+    animation: increaseSize 0.3s forwards;
+  }
+
+  @keyframes decreaseSize {
+    from {
+      font-size: 36px;
+    }
+    to {
+      font-size: 24px;
+    }
+  }
+  
+  input[type="checkbox"] ~ .accordion-title h3 {
+    animation: decreaseSize 0.3s forwards;
+  }
+
+@media screen and (max-width: 1024px) {
+    .questions {
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .questions {
+        padding: 10px;
+    }
+
+    .consultation_form {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 548px) {
+    .consultation_form {
+        margin-top: 40px;
+    }
+
+    .consult_title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32.23px;
+    }
+
+    .name_input, .phone_input {
+        margin: 20px auto;
+        height: 45px;
+        width: 90%;
+    }
+
+    .checkbox_form {
+        width: 90%;
+    }
+
+    .accordion-title {
+         margin-left: 0;
+    }
+
+    .title-1 {
+        width: 99%;
+    }
+
+    .checkbox_form input[type="checkbox"]:checked + label.checkbox:after {
+        margin-top: 11px;
+        left: 7px;
+    }
+}

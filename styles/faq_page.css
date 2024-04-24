@@ -1,0 +1,585 @@
+body{
+    overflow-y: scroll;
+}
+
+.header_faq {
+    height: fit-content;
+    padding: 10px 160px;
+}
+
+.nav_faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-list_faq {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-li_faq {
+    list-style: none;
+    display: contents;
+    cursor: pointer;
+}
+
+.nav-link_faq {
+    text-decoration: none;
+    color: #EDEDED;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24.17px;
+    text-transform: uppercase;
+}
+
+.nav-link_faq:hover {
+    color: #428BDD;
+}
+
+.logo_faq{
+    width:6%;
+    cursor: pointer;
+}
+
+.main-nav_faq {
+    display: none;
+}
+
+#active_page::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #428BDD;
+}
+
+
+.faq_questions_aboutUs {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .faq_questions_aboutServices {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .faq_questions_aboutHealth {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+
+.tabs_blockInfo_items{
+display: flex;
+align-items: center;
+flex-direction: row;
+width: 100%;
+justify-content: center;
+margin-top: 100px;
+margin-bottom: 60px;
+}
+
+.tabs_link_faq{
+padding-right: 60px;
+cursor: pointer;
+font-size: 24px;
+}
+
+.tabs_link_faq:hover{
+color: #428BDD;
+}
+
+#active_block{
+    color: #428BDD;
+}
+
+.accordion-content_aboutUs span{
+    color: #428BDD;
+}
+
+.accordion-content_aboutUs p{
+    color: #EDEDED;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.accordion-content_aboutServices span{
+    color: #428BDD;
+}
+
+.accordion-content_aboutServices p{
+    color: #EDEDED;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.accordion-content_aboutHealth span{
+    color: #428BDD;
+}
+
+.accordion-content_aboutHealth p{
+    color: #EDEDED;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.questions {
+    padding: 0 100px 100px 100px;
+}
+
+
+.accordion-item_aboutUs {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.accordion-title_aboutUs {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+
+.arrow {
+    width: 24px;
+}
+
+.acard_blueText {
+    padding: 10px;
+}
+
+.advice {
+    margin: 0 20px;
+}
+
+.advice-last {
+    padding-top: 20px;
+}
+
+.dropdown_aboutUs {
+    margin-bottom: 60px;
+        width: 100%;
+        max-width: 1040px;
+}
+
+.accordion-title_aboutUs::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #EDEDED;
+}
+
+.arrow {
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    right: 0;
+}
+
+.accordion-content_aboutUs {
+    display: none;
+    height: auto;
+    margin-bottom: 60px;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked ~ .accordion-title_aboutUs .arrow {
+    transform: rotate(180deg);
+}
+
+input[type="checkbox"]:checked ~ .accordion-content_aboutUs {
+    display: block;
+}
+
+.acard_blueText{
+    color: #428BDD;
+}
+
+
+
+
+.accordion-item_aboutServices {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.accordion-title_aboutServices {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.arrow {
+    width: 24px;
+}
+
+.acard_blueText {
+    padding: 10px;
+}
+
+.advice {
+    margin: 0 20px;
+}
+
+.advice-last {
+    padding-top: 20px;
+}
+
+.dropdown_aboutServices {
+    margin-bottom: 60px;
+        width: 100%;
+        max-width: 1040px;
+}
+
+.accordion-title_aboutServices::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #EDEDED;
+}
+
+.arrow {
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    right: 0;
+}
+
+.accordion-content_aboutServices {
+    display: none;
+    height: auto;
+    margin-bottom: 60px;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked ~ .accordion-title_aboutServices .arrow {
+    transform: rotate(180deg);
+}
+
+input[type="checkbox"]:checked ~ .accordion-content_aboutServices {
+    display: block;
+}
+
+.acard_blueText{
+    color: #428BDD;
+}
+
+
+
+.accordion-item_aboutHealth {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.accordion-title_aboutHealth {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+
+.arrow {
+    width: 24px;
+}
+
+.acard_blueText {
+    padding: 10px;
+}
+
+.advice {
+    margin: 0 20px;
+}
+
+.advice-last {
+    padding-top: 20px;
+}
+
+.dropdown_aboutHealth {
+    margin-bottom: 60px;
+        width: 100%;
+        max-width: 1040px;
+}
+
+.accordion-title_aboutHealth::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #EDEDED;
+}
+
+.arrow {
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    right: 0;
+}
+
+.accordion-content_aboutHealth {
+    display: none;
+    height: auto;
+    margin-bottom: 60px;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked ~ .accordion-title_aboutHealth .arrow {
+    transform: rotate(180deg);
+}
+
+input[type="checkbox"]:checked ~ .accordion-content_aboutHealth {
+    display: block;
+}
+
+.acard_blueText{
+    color: #428BDD;
+}
+
+.accordion-title_aboutHealth,
+.accordion-title_aboutServices,
+.accordion-title_aboutUs {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: auto;
+    transition: font-size 0.3s ease;
+}
+
+input[type="checkbox"]:checked ~ .accordion-title_aboutHealth,
+input[type="checkbox"]:checked ~ .accordion-title_aboutServices,
+input[type="checkbox"]:checked ~ .accordion-title_aboutUs {
+    font-size: 36px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .nav_blockInfo_items{
+        margin-top: 80px;
+        margin-bottom:40px;
+        }
+        
+        .nav-link_faq{
+        padding-right: 60px;
+        }
+
+    .header_faq  {
+        padding: 10px 50px;
+    }
+
+    .nav-list_faq{
+        gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 801px) {
+    .nav_blockInfo_items{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom:20px;
+        }
+        
+        .nav-link_faq{
+        padding-right: 60px;
+        }
+
+    .consultation_form_faq{
+        padding: auto;
+    }
+    .header_faq{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+
+    .tabs_link_faq{
+        margin: 0px -64px 0px 0px;
+        display: inline;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .questions{
+        padding: 20px 10px 20px 10px;
+    }
+    
+    .nav_blockInfo_items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap:40px;
+        margin-top: -40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom:80px;
+        }
+        
+        .nav-link_faq{
+        padding-right: 60px;
+        }
+
+    .consultation_form_faq{
+        padding: auto;
+    }
+
+    .header_faq {
+        padding: 20px;
+    }
+
+    .nav-list_faq{
+        display: none;
+    }
+
+    .main-nav_faq {
+        display: block;
+    }
+
+    .nav_faq{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 0px;
+    }
+
+    .logo_faq{
+        width: 15%;
+    }
+
+    #menu__toggle_faq{
+        opacity: 0;
+    }
+
+    .menu__btn_faq{
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 36px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .menu__btn_faq > span,
+    .menu__btn_faq > span::before,
+    .menu__btn_faq > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #EDEDED;
+        transition: 0.3s;
+    }
+    .menu__btn_faq > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn_faq> span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .menu__box_faq {
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        padding: 80px 0;
+        text-align: center;
+        background-color: #1E1E1E;
+        transition: 0.5s;
+    }
+
+    .menu__item_faq {
+        display: block;
+        padding: 12px 24px;
+        color: #EDEDED;
+    }
+
+    #menu__toggle_faq:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle_faq:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    #menu__toggle_faq:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #menu__toggle_faq:checked ~ .menu__box {
+        visibility: visible;
+        right: 0;
+    }
+}
+
+
+.burger {
+    display: flex;
+}

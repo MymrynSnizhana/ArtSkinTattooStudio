@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="images/logoicon.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="styles/main.css">
+
+  <title>ArtSkinTattoo - FAQ</title>
+</head>
+<body>
+  <header class="header_faq">
+    <nav class="nav_faq">
+      <img src="images/logo_white.png" alt="logotype" class="logo_faq">
+      <ul class="nav-list_faq">
+        <li class="nav-li_faq"><a href="portfolio.html" class="nav-link_faq">Портфоліо</a></li>
+        <li class="nav-li_faq"><a href="contacts.html" class="nav-link_faq">Контакти</a></li>
+        <li class="nav-li_faq"><a href="sertificates.html" class="nav-link_faq">Подарункові сертифікати</a></li>
+        <li class="nav-li_faq"><a href="payment.html" class="nav-link_faq">Про оплату</a></li>
+        <li class="nav-li_faq"><a href="faq_page.html" id="active_page" class="nav-link_faq">FAQ</a></li>
+      </ul>
+  
+      <nav class="main-nav_faq hamburger-menu_faq">
+        <input id="menu__toggle_faq" type="checkbox" />
+        <label class="menu__btn_faq" for="menu__toggle_faq">
+          <span></span>
+        </label>
+  
+        <ul class="menu__box_faq">
+          <li><a class="menu__item nav-link_faq" href="portfolio.html">Портфоліо</a></li>
+          <li><a class="menu__item nav-link_faq" href="contacts.html">Контакти</a></li>
+          <li><a class="menu__item nav-link_faq" href="sertificates.html">Подарункові сертифікати</a></li>
+          <li><a class="menu__item nav-link_faq" href="payment.html">Про оплату</a></li>
+          <li><a class="menu__item nav-link_faq" href="faq_page.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </nav>
+  
+  </header>
+
+
+
+  <div class="tabs_blockInfo">
+    <ul class="tabs_blockInfo_items">
+      <li><a class="tabs_item tabs_link_faq" id="active_block">Про ArtSkinTattoo</a></li>
+        <li><a class="tabs_item tabs_link_faq">Про послуги</a></li>
+        <li><a class="tabs_item tabs_link_faq">Про здоров'я</a></li>
+      </ul>
+    </div> 
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const navLinks = document.querySelectorAll('.tabs_blockInfo_items .tabs_item');
+      
+        // Функція для прокрутки до класу "faq_questions_aboutUs"
+        function scrollToAboutUs() {
+          const targetElement = document.querySelector('.faq_questions_aboutUs');
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      
+        // Функція для прокрутки до класу "faq_questions_aboutServices"
+        function scrollToAboutServices() {
+          const targetElement = document.querySelector('.faq_questions_aboutServices');
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      
+        // Функція для прокрутки до класу "faq_questions_aboutHealth"
+        function scrollToAboutHealth() {
+          const targetElement = document.querySelector('.faq_questions_aboutHealth');
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      
+        // Додайте обробники подій для кожного посилання
+        navLinks[0].addEventListener('click', function(event) {
+          event.preventDefault();
+          scrollToAboutUs();
+        });
+      
+        navLinks[1].addEventListener('click', function(event) {
+          event.preventDefault();
+          scrollToAboutServices();
+        });
+      
+        navLinks[2].addEventListener('click', function(event) {
+          event.preventDefault();
+          scrollToAboutHealth();
+        });
+      });
+      </script>
+
+    <section class="questions">
+      <div class="title">
+        <img src="images/blueThing.png" alt="blue thing" class="title-ing">
+        <h3 class="section-heading">Про ArtSkinTattoo</h3>
+      </div>
+  
+      <div class="faq_questions_aboutUs">
+        <ul class="dropdown_aboutUs">
+          <li class="accordion-item_aboutUs">
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="accordion-title_aboutUs">
+              <h3 class="acc-title_aboutUs title-1">Хто такі ArtSkinTattoo?</h3>
+              <img src="images/arrow_down.png" alt="Стрілка вниз" class="arrow">
+            </label>
+            <div class="accordion-content_aboutUs">
+              <p>"ArtSkinTattoo" - це найбільша мережа тату студій у Світі. <br>
+                Бренд заснований у 2011 році і з того часу активно розвивається та масштабується. <br>
+                Спеціалізація мережі досить широка, основні напрямки якої тату та пірсинг індустрія. Ми підняли сферу на принципово новий та високий рівень стандартів.<br>
+                На сьогоднішній день кількість студій складає 150.<br>
+                "ArtSkinTattoo" - це не франшиза. Ми – одна велика родина, і Ви можете стати нашим партнером. Якщо Ви зацікавлені у спільній роботі – зв’яжіться з нами.</p>
+            </div>
+          </li>
+          <li class="accordion-item_aboutUs">
+            <input type="checkbox" id="toggle2">
+            <label for="toggle2" class="accordion-title_aboutUs">
+              <h3 class="acc-title_aboutUs">Про дипломи</h3>
+              <img src="images/arrow_down.png" alt="Стрілка вниз" class="arrow">
+            </label>
+            <div class="accordion-content_aboutUs">
+              <p>Дипломи "ArtSkinTattoo" міжнародного зразка є свідченням про професійну освіту в галузі татуювання та його видалення, та котирується в 140 країнах.<br>
+                Цей диплом, як і додаток до нього, визнаний Європейською Асоціацією Майстрів.<br>
+                Диплом пройшов акредитацію в Чехії, що підтверджує його відповідність європейським стандартам та вимогам у цій галузі.<br>
+                Він дає майстрам можливість працювати в індустрії тату та пірсингу у країнах Європейського союзу. Крім того, він може стати важливим документом при отриманні ліцензії або сертифіката в інших країнах, які мають вимоги до освіти та професійних навичок майстра.<br>
+                Для отримання більш детальної інформації зверніться до адміністратора студії або консультанта на сайті.</p>
+            </div>
+          </li>
+          <li class="accordion-item_aboutUs">
+            <input type="checkbox" id="toggle3">
+            <label for="toggle3" class="accordion-title_aboutUs">
+              <h3 class="acc-title_aboutUs">Історія салону</h3>
+              <img src="images/arrow_down.png" alt="Стрілка вниз" class="arrow">
+            </label>
+            <div class="accordion-content_aboutUs">
+                <p><span>2011</span> - Відкриття студії у Львові</p><br>
+                <p><span>2013</span> - Відкриття студії в Тернополі</p><br>
+                <p><span>2015</span> - Відкриття студії в Хмельницькому</p><br>
+                <p><span>2016</span> - Відкриття студії в Вінниці</p><br>
+                <p><span>2017</span> - Відкриття студії в Одесі</p><br>
+                <p><span>2018</span> - Відкриття студії в Дніпрі</p><br>
+                <p><span>2019</span> - Відкриття студії в Запоріжжі</p><br>
+                <p><span>2020</span> - Відкриття студії в Маріуполі</p><br>
+                <p><span>2021</span> - Відкриття студії в Києві</p><br>
+                <p><span>2022</span> - Відкриття студії в Польщі, Краків</p><br>
+                <p><span>2023</span> - Відкриття студії в Ужгороді</p>
+            </div>
+          </li>
+          <li class="accordion-item_aboutUs">
+            <input type="checkbox" id="toggle4">
+            <label for="toggle4" class="accordion-title_aboutUs">
+              <h3 class="acc-title_aboutUs">Відповідальність ArtSkinTattoo</h3>
+              <img src="images/arrow_down.png" alt="Стрілка вниз" class="arrow">
+            </label>
+            <div class="accordion-content_aboutUs">
+              <p>Відповідальність ArtSkinTattoo суворо обмежена визначенням прямої шкоди, заподіяної представниками компанії при наданні та внаслідок надання цих послуг 
+                з урахуванням характеру самих послуг. Будь-яка інша відповідальність за шкоду виключається (між іншим: втрачений дохід, сплачений побут, витрати на проїзд, 
+                фінансові вкладення тощо) чи то пряма, чи опосередкована шкода, навіть якщо ризик такої шкоди був заподіяний ArtSkinTattoo. </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="title">
+        <img src="images/blueThing.png" alt="blue thing" class="title-ing">
+        <h3 class="section-heading">Про послуги</h3>
+      </div>
+
+
+      <div class="faq_questions_aboutServices">
+        <ul class="dropdown_aboutServices">
+          <li class="accordion-item_aboutServices">
+            <input type="checkbox" id="toggle5">
+            <label for="toggle5" class="accordion-title_aboutServices">
+              <h3 class="acc-title_aboutServices title-1">Від чого залежить вартість тату?</h3>
+              <img src="images/arrow_down.png" alt="Стрілка вниз" class="arrow">
+            </label>
+            <div class="accordion-content_aboutServices">
+              <p>Вартість залежить від кількох факторів:<br>
+                Ціна тату залежить від розміру, кольору, стилю, складності ескізу та місця нанесення.<br>
+                Кольори можуть впливати на ціну. Татуювання з більш яскравими та насиченими кольорами, важче піддаються видаленню, ніж ті, які виконані чорною фарбою.<br>
+                Вік татуювання. Чим старше татуювання, тим складніше його видалити, тому що фарби можуть бути краще занурені в шкіру.<br>
+                Вартість також може залежати від майстра та розташування студії.<br>
+                Ви можете уточнити ціни у студії.<br>
+                Для отримання більш детальної інформації зверніться до адміністратора студії або консультанта на сайті.</p>
+            </div>
+          </li>
+          <li class="accordion-item_aboutServices">
+            <input type="checkbox" id="toggle6">
+            <label for="toggle6" class="accordion-title_aboutServices">
+              <h3 class="acc-title_aboutServices">Що взяти з собою на сеанс?</h3>
+              <img src="images/arrow_down.png" alt="Стрілка вниз" class="arrow">
+            </label>
+            <div class="accordion-content_aboutServices">
+              <p>Документ, що засвідчує особу, для укладання договору та реєстрації.<br>
+                Змінний одяг на випадок, якщо забрудниться той, у якому прийшов клієнт.<br>
+                У кожній студії ArtSkinTattoo є все необхідне для комфорту клієнта: чай, вода, льодяники, пледи, подушки, журнали та каталоги ескізів.<br>
+                Для отримання більш детальної інформації зверніться до адміністратора студії або консультанта на сайті.</p>
+            </div>
+          </li>
+          <li class="accordion-item_aboutServices">
+            <input type="checkbox" id="toggle7">
+            <label for="toggle7" class="accordion-title_aboutServices">
+              <h3 class="acc-title_aboutServices">В що одягатися на сеанс?</h3>
+              <img src="images/arrow_down.png" alt="Стрілка вниз" class="arrow">
+            </label>
+            <div class="accordion-content_aboutServices">
+              <p>Важливо вибрати зручний і відповідний одяг, який допоможе Вам почуватися комфортно під час процесу і дозволить легко дотягнутися до зони, де виконуватиметься татуювання.<br>
+                Надягніть речі, які дозволять легко дотягнутися до місця, де виконуватиметься татуювання. Наприклад, якщо тату буде на плечі, виберіть майку з широкими проймами, щоб Ваш татуювальник міг легко отримати доступ до цієї області.<br>
+                Уникайте одягу, який може заважати майстру в роботі, наприклад, тугих штанів та спідниць. Ви також можете розглянути можливість одягнути шорти або легінси, щоб було легше працювати на ногах або гомілках.<br>
+                Не рекомендуємо одягати речі, які можуть залишити сліди та викликати роздратування на Вашій шкірі.<br>
+                Виберіть одяг, який легко переться або такий,що не шкода забруднити.<br>
+                Для отримання більш детальної інформації зверніться до адміністратора студії або консультанта на сайті.</p>
+            </div>
+          </li>
+          <li class="accordion-item_aboutServices">
+            <input type="checkbox" id="toggle8">
+            <label for="toggle8" class="accordion-title_aboutServices">
+              <h3 class="acc-title_aboutServices">Як записатися на сеанс?</h3>
+              <img src="images/arrow_down.png" alt="Стрілка вниз" class="arrow">
+            </label>
+            <div class="accordion-content_aboutServices">
+              <p>Ви можете здійснити запис кількома способами:<br>
+                На сайті за допомогою форми "Записатися на сеанс" або через соціальні мережі, месенджери;<br>
+                По телефону;<br>
+                Безпосередньо у студії.<br>
+                Що написати?<br>
+                Намагайтеся максимально докладно описати свої побажання щодо татуювання, яке Ви хочете, вкажіть розташування на тілі, приблизний розмір у сантиметрах.<br>
+                Чи можна надсилати референси? Так, фотографії та ескізи допоможуть підібрати для Вас відповідного тату-майстра, який працює в цьому стилі. Для отримання <br>
+                більш детальної інформації зверніться до адміністратора студії або консультанта на сайті. </p>
+            </div>
+          </li>
+
+          <li class="accordion-item_aboutServices">
+            <input type="checkbox" id="toggle9">
+            <label for="toggle9" class="accordion-title_aboutServices">
+              <h3 class="acc-title_aboutServices">Чи є ескізи за якими не зроблять тату?</h3>
+              <img src="images/arrow_down.png" alt="Стрілка вниз" class="arrow">
+            </label>
+            <div class="accordion-content_aboutServices">
+              <p>Так, існують певні категорії ескізів та дизайнів, які студія може відмовитись робити. Ці обмеження можуть бути пов'язані з різними факторами, такими як етика, 
+                законодавство, професійні стандарти або особисті переконання татуювальників. Деякі татуювання вважаються неприйнятними, з погляду медичної чи юридичної відповідальності. 
+                Наприклад, ті, що наносяться на певні частини тіла, можуть бути заборонені законодавством або вимагати спеціального дозволу для виконання.
+                Майстри також можуть відмовитись робити татуювання, які містять неприйнятні зображення, такі як нацистська символіка, елементи жорстокості, расизму, містичні, сатанинські 
+                знаки, релігійні мотиви або зображення, що порушують авторські права.
+                Копіювання дизайнів інших художників є неетичним та неправильним, крім того, татуювальники вважають за краще працювати з власними проектами та ідеями, які були розроблені 
+                спеціально для конкретного клієнта.
+                Якщо татуювальник згоден виконати прохання клієнта та набити дизайн іншого автора – важливо переконатися, що клієнт має усі необхідні дозволи на використання дизайну. 
+                Також майстер може запропонувати внести деякі зміни в дизайн, щоб зробити його унікальним та адаптованим до конкретного клієнта та його уподобань.
+                Для отримання більш детальної інформації зверніться до адміністратора студії або консультанта на сайті.</p>
+            </div>
+          </li>
+
+          <li class="accordion-item_aboutServices">
+            <input type="checkbox" id="toggle10">
+            <label for="toggle10" class="accordion-title_aboutServices">
+              <h3 class="acc-title_aboutServices">Створення ескізу відбувається за вимогами клієнта?</h3>
+              <img src="images/arrow_down.png" alt="Стрілка вниз" class="arrow">
+            </label>
+            <div class="accordion-content_aboutServices">
+              <p>Ми створюємо оригінальні ескізи згідно з вимогами клієнта. Наші тату-майстри розроблять індивідуальний дизайн, який відображатиме всі Ваші побажання та уподобання.<br>
+                Завдання клієнта - докладно описати вимоги до тату, у тому числі:<br>
+                - тематику та стиль виконання (по можливості надайте референси);<br>
+                - місце, де має розташовуватися татуювання;<br>
+                - розмір (необхідно вказати у сантиметрах);<br>
+                Ми надамо кілька варіантів ескізу, щоб Ви могли вибрати найбільш підходящий.<br>
+                Для отримання більш детальної інформації зверніться до адміністратора студії або консультанта на сайті.</p>
+            </div>
+          </li>
+
+
+          <li class="accordion-item_aboutServices">
+            <input type="checkbox" id="toggle11">
+            <label for="toggle11" class="accordion-title_aboutServices">
+              <h3 class="acc-title_aboutServices">Що НЕ можна робити перед сеансом?</h3>
+              <img src="images/arrow_down.png" alt="Стрілка вниз" class="arrow">
+            </label>
+            <div class="accordion-content_aboutServices">
+              <p>Вживати алкоголь та приймати аспірин чи інші препарати, оскільки це може погіршити загоєння та збільшити ризик кровотечі під час процедури. Якщо Ви п'єте ліки за медичними показаннями, обов'язково повідомте про це майстру.
+                Засмагати або проводити тривалий час на сонці, що веде до пошкодження шкіри та збільшення ризику інфекції під час процедури.<br>
+                Самостійно видаляти волосся на місці, де проводитиметься процедура.<br>
+                Використовувати ароматизовані чи агресивні засоби для догляду за шкірою.<br>
+                Важливо дотримуватись інструкцій та порад свого майстра, щоб мінімізувати ризики та забезпечити безпечну процедуру.<br>
+                Для отримання більш детальної інформації зверніться до адміністратора студії або консультанта на сайті.</p>
+            </div>
+          </li>
+          
+          <li class="accordion-item_aboutServices">
+            <input type="checkbox" id="toggle12">
+            <label for="toggle12" class="accordion-title_aboutServices">
+              <h3 class="acc-title_aboutServices">Як проходить сеанс?</h3>
+              <img src="images/arrow_down.png" alt="Стрілка вниз" class="arrow">
+            </label>
+            <div class="accordion-content_aboutServices">
+              <p>Сеанс татуювання зазвичай починається з консультації з татуювання, де обговорюються всі деталі ескізу. На основі отриманої інформації він або внесе зміни, або надасть готовий дизайн.<br>
+                Потім татуювальник підготує і продезінфікує область шкіри, де наноситиметься татуювання.<br>
+                Наступний крок – розташування на Вашому тілі. Майстер за допомогою кальки перенесе малюнок на шкіру. Залежно від розміру татуювання та його складності, процес підготовки та масштабування може тривати від 10 до 60 хвилин. Сам сеанс тату може тривати як кілька годин, так і зажадати кількох сеансів, залежно від розміру, складності дизайну та індивідуальних особливостей шкіри людини.<br>
+                Після завершення процесу нанесення татуювання, майстер накладе захисну плівку та дасть інструкції з догляду за тату на наступні кілька тижнів, щоб допомогти відновити шкіру та зберегти яскравість татуювання.<br>
+                Для отримання більш детальної інформації зверніться до адміністратора студії або консультанта на сайті.</p>
+            </div>
+          </li>
+
+          <li class="accordion-item_aboutServices">
+            <input type="checkbox" id="toggle13">
+            <label for="toggle13" class="accordion-title_aboutServices">
+              <h3 class="acc-title_aboutServices">Скільки триває сеанс?</h3>
+              <img src="images/arrow_down.png" alt="Стрілка вниз" class="arrow">
+            </label>
+            <div class="accordion-content_aboutServices">
+              <p>Тривалість сеансу залежить від розміру та складності дизайну, а також від індивідуальних особливостей кожного клієнта.<br>
+                У середньому, щоб набити маленькі татуювання, потрібно близько півгодини, середні - від 2 до 4 годин, а великі - від 4 до 6 годин. Денний сеанс може тривати до 12 години, але таку тривалість не кожен може витримати - все залежить від витривалості клієнта.<br>
+                Важливо пам'ятати, що татуювання - перманентний малюнок на тілі, тому важливо приділити достатній час для отримання якісного результату.<br>
+                Для отримання більш детальної інформації зверніться до адміністратора студії або консультанта на сайті.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="title">
+        <img src="images/blueThing.png" alt="blue thing" class="title-ing">
+        <h3 class="section-heading">Про здоров'я</h3>
+      </div>
+
+
+      <div class="faq_questions_aboutHealth">
+        <ul class="dropdown_aboutHealth">
+          <li class="accordion-item_aboutHealth">
+            <input type="checkbox" id="toggle14">
+            <label for="toggle14" class="accordion-title_aboutHealth">
+              <h3 class="acc-title_aboutHealth title-1">Протипоказання</h3>
+              <img src="images/arrow_down.png" alt="Стрілка вниз" class="arrow">
+            </label>
+            <div class="accordion-content_aboutHealth">
+              <p>Протипоказання може бути як медичного, так і косметичного характеру.<br>
+                Медичні протипоказання включають:<br>
+                - захворювання крові, особливо виражене зниження її згортання;<br>
+                - онкологічні та гострі запальні захворювання;<br>
+                - психічні розлади та епілепсія;<br>
+                - захворювання, пов'язані із значним зниженням імунітету;<br>
+                - тяжкі вірусні захворювання (гепатит, ВІЛ/СНІД).<br>
+                - наявність хронічних захворювань, таких як діабет 1 типу (інсулінозалежний) або тяжкий перебіг діабету 2 типу, серцево-судинні захворювання, гіпертонія;<br>
+                - приймання певних лікарських засобів, які можуть погіршити загоєння;<br>
+                - наявність алергічної реакції на барвники чи інші матеріали, що використовуються під час процедури.<br>
+                До косметичних протипоказань відносяться:<br>
+                - наявність шкірних захворювань, таких як екзема чи псоріаз;<br>
+                - індивідуальна схильність до утворення келоїдних рубців;<br>
+                - вагітність чи годування груддю.<br>
+                Перед процедурою необхідно обговорити з практикуючим фахівцем усі можливі ризики та протипоказання. Якщо у Вас є якісь медичні проблеми або Ви перебуваєте в стані вагітності, важливо повідомити про це Вашого майстра перед процедурою.<br>
+                Для отримання більш детальної інформації зверніться до адміністратора студії або консультанта на сайті.</p>
+            </div>
+          </li>
+
+          <li class="accordion-item_aboutHealth">
+            <input type="checkbox" id="toggle15">
+            <label for="toggle15" class="accordion-title_aboutHealth">
+              <h3 class="acc-title_aboutHealth">За яких захворювань не можна робити тату?</h3>
+              <img src="images/arrow_down.png" alt="Стрілка вниз" class="arrow">
+            </label>
+            <div class="accordion-content_aboutHealth">
+              <p>Існує кілька захворювань та станів, при яких не рекомендується робити татуювання, оскільки це може призвести до ускладнень або ускладнити проблеми зі здоров'ям. Деякі з таких станів включають:<br>
+                Інфекційні захворювання, такі як ВІЛ, гепатити B та C та сифіліс. У цьому випадку ризик передачі інфекції від татуювання до шкіри дуже високий, тому лікарі не рекомендують робити татуювання за наявності цих захворювань.<br>
+                Алергічні реакції на фарби для татуювання. Деякі люди можуть мати алергічну реакцію на певні фарби для татуювань. Це може спричинити подразнення шкіри, свербіж та інші проблеми.<br>
+                Хронічні захворювання шкіри, такі як екзема, псоріаз та дерматит. Ці захворювання можуть посилитися після татуювання та викликати болісну реакцію на шкірі.<br>
+                Деякі види раку шкіри. Людям, які мають меланому чи інші види раку шкіри, не рекомендується робити татуювання, оскільки це може призвести до поширення ракових клітин на інші частини тіла.<br>
+                Вагітність та годування груддю. У цей період жінки мають бути особливо обережними, оскільки татуювальні фарби можуть увійти в кров і вплинути на здоров'я дитини.<br>
+                У будь-якому випадку, перед тим, як робити татуювання, необхідно звернутися до професійного майстра тату і проконсультуватися з лікарем.<br>
+                Для отримання більш детальної інформації зверніться до адміністратора студії або консультанта на сайті.</p>
+            </div>
+          </li>
+          <li class="accordion-item_aboutHealth">
+            <input type="checkbox" id="toggle16">
+            <label for="toggle16" class="accordion-title_aboutHealth">
+              <h3 class="acc-title_aboutHealth">Як перевірити чи є алергія на фарбу?</h3>
+              <img src="images/arrow_down.png" alt="Стрілка вниз" class="arrow">
+            </label>
+            <div class="accordion-content">
+              <p>Перед тим, як зробити татуювання чи перманентний макіяж, необхідно переконатися, що у Вас немає алергії на фарбу.<br>
+                Існує кілька способів це перевірити:<br>
+                Шкірний тест: перед процедурою невелику кількість фарби наносять на маленьку ділянку шкіри і залишають на кілька днів. Якщо на місці нанесення з'являться почервоніння, свербіж, набряк чи інші ознаки алергії – фарбу використовувати не можна.<br>
+                Звернення до лікаря-алерголога. Це може включати тести на шкірі або аналіз крові.<br>
+                Загальні симптоми: якщо у Вас вже були алергічні реакції на інші речовини, такі як харчові продукти, ліки чи косметику, то ймовірність алергії на фарбу для татуювань та перманентного макіяжу вища.<br>
+                Якщо у Вас є сумніви щодо алергії на фарбу, то обов'язково обговоріть це з вашим майстром і зверніться до лікаря-алерголога, щоб уникнути небажаних наслідків.<br>
+                Імовірність наявності алергії – 0,0001%. Але навіть за наявності, алергічні реакції на пігмент найчастіше виявляються зі слабкою інтенсивністю.<br>
+                Для отримання більш детальної інформації зверніться до адміністратора студії або консультанта на сайті.</p>
+            </div>
+          </li>
+          <li class="accordion-item_aboutHealth">
+            <input type="checkbox" id="toggle17">
+            <label for="toggle17" class="accordion-title_aboutHealth">
+              <h3 class="acc-title_aboutHealth">Як доглядати за тату?</h3>
+              <img src="images/arrow_down.png" alt="Стрілка вниз" class="arrow">
+            </label>
+            <div class="accordion-content_aboutHealth">
+              <p>Догляд за татуюванням дуже важливий, щоб воно зажило без ускладнень і виглядало красиво протягом багатьох років. Ось кілька порад щодо догляду за татуюванням:<br>
+                - Майстри використовують спеціальну загоювальну плівку. Догляд з нею набагато простіший, адже плівку знімають лише через 4-5 днів, і Ви відразу переходите до процесу миття та зволоження шкіри <br>
+                слід повторювати 2-3 рази на день протягом 3-4 днів. Промивати та зволожувати татуювання потрібно 2-3 рази на день, не накладаючи пелюшки, доки кірка не зникне. Після нанесення татуювання зазвичай загоюється протягом 2-3 тижнів. Пам'ятайте, що візуально і за відчуттями шкіра може здаватися загоєною, проте повне загоєння може тривати до 6 місяців.<br>
+                - Не чіпайте татуювання руками і не дряпайте його. Це може спричинити інфекцію або пошкодити малюнок.<br>
+                - Не наносьте на татуювання креми, лосьйони чи олії протягом перших 2-3 днів. Зачекайте, поки шкіра загоїться, а ранки затягнуться. Не рекомендується використовувати креми на основі вазеліну, оскільки вони сприяють знебарвленню татуювання.<br>
+                Догляд за тату повинен починатися з моменту її нанесення і продовжуватись протягом декількох тижнів до повного загоєння шкіри. Виконуйте рекомендації вашого тату-майстра, щоб процес пройшов без ускладнень.<br>
+                Для отримання більш детальної інформації зверніться до адміністратора студії або консультанта на сайті.</p>
+            </div>
+          </li>
+
+          <li class="accordion-item_aboutHealth">
+            <input type="checkbox" id="toggle18">
+            <label for="toggle18" class="accordion-title_aboutHealth">
+              <h3 class="acc-title_aboutHealth">Як дбати про тату?</h3>
+              <img src="images/arrow_down.png" alt="Стрілка вниз" class="arrow">
+            </label>
+            <div class="accordion-content_aboutHealth">
+              <p>Будьте готові до того, що татуювання потьмяніє через місяць після нанесення, а згодом воно втратить інтенсивність кольору та чіткість ліній. Щоб тату якомога довше не втрачало свого забарвлення – насамперед уникайте сонячного світла та намагайтеся не засмагати надто сильно. Для цього використовуйте сонцезахисний крем із UV50.
+                Для отримання більш детальної інформації зверніться до адміністратора студії або консультанта на сайті.</p>
+            </div>
+          </li>
+
+          <li class="accordion-item_aboutHealth">
+            <input type="checkbox" id="toggle19">
+            <label for="toggle19" class="accordion-title_aboutHealth">
+              <h3 class="acc-title_aboutHealth">Чи болить тату?</h3>
+              <img src="images/arrow_down.png" alt="Стрілка вниз" class="arrow">
+            </label>
+            <div class="accordion-content_aboutHealth">
+              <p>Так, процес нанесення татуювання може бути болючим для деяких людей, особливо якщо вони мають низький больовий поріг або, якщо татуювання наноситься на чутливі області тіла, такі як ребра, пальці або шия.
+                Біль також може залежати від індивідуальних особливостей людини, таких як рівень чутливості шкіри, наявність хворобливих станів, таких як артрит, та рівень втоми та стресу.
+                Щоб знизити біль під час процедури нанесення татуювання можна нанести на шкіру креми, що анестезують. Однак перед використанням будь-яких знеболювальних засобів необхідно проконсультуватися з майстром тату.
+                Для отримання більш детальної інформації зверніться до адміністратора студії або консультанта на сайті.</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+  
+  
+      <form class="consultation_form">
+        <h2 class="consult_title">Потрібна консультація?</h2>
+        <input class="name_input" type="text" placeholder="ПІБ" required>
+        <input class="phone_input" type="tel" placeholder="380 ХХ ХХХ ХХ ХХ" required>
+        <div class="checkbox_form">
+          <input type="checkbox" id="checkbox" name="checkbox1" value="option1">
+          <label for="checkbox" class="checkbox">Приймаю всі умови і підтверджую, що мені більше 18-ти років</label><br>
+        </div>
+        <button class="btn btn-small" id="btn-consult" type="button">ЗАМОВИТИ КОНСУЛЬТАЦІЮ</button>
+      </form>
+    </section>
+
+
+
+      <footer class="footer">
+        <img src="images/logo_white.png" alt="logo_tattoo_white" class="logo-footer">
+        <hr class="hr">
+      
+        <div class="info_footer">
+          <div class="footer-section">
+            <h3 class="title_footer">ГРАФІК РОБОТИ</h3>
+            <div class="footer-details">
+              <p>ПН-ПТ: 09:00 - 20:00</p>
+              <p>СБ-НД: 10:00 - 16:00</p>
+            </div>
+          </div>
+      
+          <div class="footer-section">
+            <h3 class="title_footer">ЛОКАЦІЯ</h3>
+            <div class="footer-details">
+              <p>м. Львів, вул. Шевченка,35</p>
+              <p>м. Львів, вул. Пасічна,121</p>
+            </div>
+          </div>
+      
+          <div class="footer-section">
+            <h3 class="title_footer">КОНСУЛЬТАЦІЯ</h3>
+            <div class="footer-details">
+              <p>+380 95 678 34 12</p>
+              <p>+380 93 456 78 99</p>
+            </div>
+          </div>
+      
+          <div class="footer-section">
+            <h3 class="title_footer">E-MAIL</h3>
+            <div class="footer-details">
+              <p>ArtSkin_Tattoo@gmail.com</p>
+              <p>ArtSkin_Tattoo_supp@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="map_footer">
+          <iframe class="map-item"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.3618765500647!2d-0.1276436842566743!3d51.50703055115788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b50b7b8287b%3A0x4e817b6d0b50717a!2sBig%20Ben!5e0!3m2!1sen!2suk!4v1649327554821!5m2!1sen!2suk"
+                   allowfullscreen="" loading="lazy"></iframe>
+          <img src="images/location.png" alt="icon_location_footer" class="location-icon">
+        </div>
+      </footer>
+
+  <script src="faq.js"></script>
+</body>
+</html>

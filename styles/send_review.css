@@ -1,0 +1,134 @@
+
+.form_content_review{
+    border: 10px solid #428BDD;
+    margin: auto;
+    padding: 60px 150px 60px 150px;
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1E1E1E;
+}
+
+.custom-btn-send{
+    padding: 12px 24px;
+    background-color: #428BDD;
+    color: #EDEDED;
+    transition: 0.3s ease-in-out ;
+    width: 256px;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.custom-btn-send:hover{
+    padding: 12px 24px;
+    background-color: #194474;
+    border: none;
+}
+
+.text_review{
+font-size: 18px;
+font-weight: 400;
+margin-bottom: 40px;
+}
+
+.close_button_modal_review{
+    position: relative;
+    left:96%;
+    top: 6%;
+    background-color: #1E1E1E;
+    border: none;
+    border-style: none;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.form-review-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 75.21px;
+    color: #EDEDED;
+}
+
+.form_content {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 40px 0;
+}
+
+.info_in_formField_column1{
+    margin-bottom: 40px;
+}
+
+.custom-btn{
+    margin-bottom: 40px;
+}
+
+.custom-btn-send{
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.photo_tattoo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.rating{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+#star1, #star2, #star3, #star4, #star5{
+    background-color: #1E1E1E;
+    border: none;
+    cursor: pointer;
+}
+
+.custom-btn-additional{
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    width: auto;
+    cursor: pointer;
+}
+
+.custom-btn-send{
+    display: flex;
+    padding: 12px 24px;
+    width: fit-content;
+    margin-top: -40px;
+    cursor: pointer;
+}
+
+.custom-btn-sendPhoto{
+display: flex;
+    margin: auto;
+    padding: 12px 24px;
+    background-color: #1E1E1E;
+    border: 1px #EDEDED solid;
+    color: #EDEDED;
+    transition: 0.3s ease-in-out ;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    align-items: center;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.custom-btn-sendPhoto:hover{
+    background-color: #428BDD;
+    border: 1px #428BDD solid;
+}
